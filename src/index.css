@@ -1,13 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+ font-size: 1.5rem;
+ color: black;
+}
+
+h1 {
+  font-size: 8em;
+  color: black;
+  font-weight: bolder;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  color: azure;
+  background: url("./assets/sunset.jpg") no-repeat center center/cover;
+}
+
+.app:before {
+  content: "";
+  background: url("./assets/sun.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.app .search {
+  text-align: center;
+  padding: 1em;
+
+}
+
+::placeholder {
+  color: rgb(75, 75, 75);
+}
+
+.app input {
+  width: 20em;
+  padding: 1em 1em;
+  margin-top: 2em;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 0;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+input:active, input:focus {
+  border: 0;
+  outline: none;
+}
+
+.container {
+  max-width: 60vw;
+  height: 70vh;
+  margin: auto;
+  padding: 0 1em;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1em auto;
+}
+
+.app .description {
+  position: relative;
+
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 12px;
+  background-color: white;
+  opacity: 0.5;
+
+}
+
+.bold {
+  font-weight: bold;
 }
